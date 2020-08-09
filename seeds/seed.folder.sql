@@ -1,0 +1,1 @@
+INSERT INTO folder (folder_name) VALUES ('Important'), ('Super'),('Spangley');
