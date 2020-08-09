@@ -1,8 +1,13 @@
 # Noteful Server!
 
-This is a boilerplate project used for starting new projects!
+Noteful lets users manage and organize their notes, which are stored on an external server. This repo provides that server. (app can be found here: )
 
-## Set up
+
+
+## Built with
+  Node, Express, Chai, Supertest
+
+## Setup
 
 Complete the following steps to start a new project (NEW-PROJECT-NAME):
 
