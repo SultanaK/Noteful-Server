@@ -10,10 +10,8 @@
     "migrate:test": "env NODE_ENV=test npm run migrate",
     "migrate:production": "heroku run npm run migrate",
     "start": "node src/server.js",
-    "predeploy": "npm audit",
-    "deploy": "git push heroku master",
-    "postdeploy": "npm run migrate:production"
-
+    "predeploy": "npm audit && npm run migrate:production",
+    "deploy": "git push heroku master"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +28,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.1",
     "nodemon": "^2.0.4",
     "postgrator-cli": "^3.2.0",
     "supertest": "^4.0.2"
