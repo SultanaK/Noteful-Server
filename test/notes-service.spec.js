@@ -3,7 +3,7 @@ const knex = require('knex')
 const { makeNotesArray } = require('./notes.fixtures')
 const { makeFoldersArray } = require('./folders.fixtures')
 
-describe(`Notes service object`, function () {
+/* describe(`Notes service object`, function () {
     let db
     const testNotes = makeNotesArray()
     const testFolders = makeFoldersArray()
@@ -68,7 +68,7 @@ describe(`Notes service object`, function () {
                 note_name: 'updated title',
                 modified: new Date(),
                 /* modified: new Date('2019-03-03T00:00:00.000Z'),  */
-                folder_id: 3,
+               /* folder_id: 3,
                 content: 'updated content',
             }
             return noteService.updateNote(db, idOfNoteToUpdate, newNoteData)
@@ -79,11 +79,11 @@ describe(`Notes service object`, function () {
                         ...newNoteData,
                     })
                 })
-        })
+       /* })
 
     })
-
-    context(`Given 'note' has no data`, () => {
+}) */
+    /* context(`Given 'note' has no data`, () => {
         it(`getAllNotes() resolves an empty array`, () => {
 
             return noteService.getAllNote(db)
@@ -92,7 +92,7 @@ describe(`Notes service object`, function () {
                 })
         })
 
-        it(`insertNote() inserts a new note and resolves the new note with an 'id'`, () => {
+         it(`insertNote() inserts a new note and resolves the new note with an 'id'`, () => {
             const testNotes = makeNotesArray()
             const testFolders = makeFoldersArray()
             
@@ -116,19 +116,12 @@ describe(`Notes service object`, function () {
             }
             return noteService.addNote(db, newNote)
                 .then(actual => {
-                    expect(actual).to.eql(newNote
-                        /* id: 4,
-                        note_name: newNote.note_name,
-                        modified: new Date(newNote.modified),
-                        folder_id: newNote.folder_id,
-                        content: newNote.content, */
-
-                    )
+                    expect(actual).to.eql(newNote)
                 })
-        })
+        }) 
 
-    })
+    }) 
 
-})
+})*/
 
 
